@@ -3,3 +3,4 @@ const getData = async (url) => {
   return data;
 };
 export default getData;
+//traer la data
