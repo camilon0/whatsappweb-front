@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/WhatsApp_Icon.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>WPP Web</title>
+  </head>
+  <body>
+    <nav class="nav"></nav>
+    <main class="main">
+      <div class="main__container-left">
+        <div class="header-left">
+          <a href=""><img src="../assets/img/mechas.jpg" alt="" /></a>
+          <span id="nameUser"></span>
+          <button id="btnCloseSession">Cerrar Sesión</button>
+        </div>
+        <form class="search-left" id="form_id">
+          <a href=""><img src="../assets/img/buscar.png" /></a>
+          <input
+            id="inputid"
+            type="text"
+            class="search-input"
+            placeholder="Buscar o empezar un chat nuevo"
+          />
+        </form>
+        <div class="contacts" id="container">
+          <div class="contacts__container">
+            <div class="contacts-info">
+              <a href=""
+                ><img
+                  class="contact-img"
+                  src="../assets/img/berto.jpg"
+                  alt="" /></a
+              ><span class="contact-name">Berto</span>
+            </div>
+          </div>
+          <div class="contacts__container">
+            <div class="contacts-info">
+              <a href=""
+                ><img class="contact-img" src="../assets/img/lina.jpg" alt=""
+              /></a>
+              <span class="contact-name">Lina Garcia</span>
+            </div>
+          </div>
+          <div class="contacts__container">
+            <div class="contacts-info">
+              <a href=""
+                ><img class="contact-img" src="../assets/img/longas.jpg" alt=""
+              /></a>
+              <span class="contact-name">Longas</span>
+            </div>
+          </div>
+          <div class="contacts__container">
+            <div class="contacts-info">
+              <a href=""
+                ><img class="contact-img" src="../assets/img/profe.jpg" alt=""
+              /></a>
+              <span class="contact-name">Whitney Stevenson</span>
+            </div>
+          </div>
+          <div class="contacts__container">
+            <div class="contacts-info">
+              <a href=""
+                ><img class="contact-img" src="../assets/img/jenny.jpg" alt=""
+              /></a>
+              <span class="contact-name">Jenny Q</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__container-right">
+        <div class="header-right">
+          <a href=""><img src="../assets/img/berto.jpg" alt="" /></a>
+          <p>Berto</p>
+        </div>
+        <div class="messages__box" id="message">
+          <div class="message friend_message">
+            <ul id="message">
+              <li>
+                Holaa<br />
+                <span>12:14</span>
+              </li>
+            </ul>
+          </div>
+          <!-- <section id="message"></section> -->
+        </div>
+
+        <div class="input-message">
+          <a href=""
+            ><img class="smile" src="../assets/img/sonreir.png" alt=""
+          /></a>
+          <a href=""
+            ><img class="clip" src="../assets/img/clip.png" alt=""
+          /></a>
+          <input
+            id="textbox"
+            type="text"
+            class="search-input"
+            placeholder="Escribe un mensaje aquí"
+          />
+          <button id="send">
+            <img class="send" src="../assets/img/send.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
